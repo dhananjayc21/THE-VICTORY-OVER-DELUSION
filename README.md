@@ -22,7 +22,19 @@ Fake Ravana:
 
 So how do we solve this problem statement using computer vision?
 
+PART-1 : Finding the number of heads to the right and to the left of the main face:
+
+  1. We start by finding the number of peaks or the tips of the mukuts of Ravana faces.
+  2. We also save the heights of these peaks.
+  3. 
 
 
+PART-2 : Checking if one of the faces is absent:
+
+
+
+
+If we get the answer for the two parts as yes, our Ravana is real.
+Else our Ravana is fake.
 
 
