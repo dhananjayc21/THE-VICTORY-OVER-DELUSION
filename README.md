@@ -20,5 +20,9 @@ Fake Ravana:
   3. ![image](https://github.com/user-attachments/assets/8ee88f73-55a5-4e12-a0d2-b1342082d17d)
 
 
+So how do we solve this problem statement using computer vision?
+
+
+
 
 
