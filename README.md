@@ -1,4 +1,7 @@
 # THE-VICTORY-OVER-DELUSION
+
+Solving a hard Computer Vision problem using basic logic.
+
 Problem Statement:
 
 In this problem, we will be given a pictyre of Ravana and we need to identify wether the image is of the real ravanna or is it fake. So, what is a real Ravana :
