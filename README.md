@@ -42,7 +42,8 @@ PART-2 : Checking if one of the faces is absent:
   3. After this we count the number of connected components from the image, if the answer turns out to be greater than 1, it means atleast one of the faces does not have eyebrows and moustache. This means that         the given Ravana image is fake.
   4. If the number of connected components come out to be 1, our ravana image is 'real'.
   5. Please keep in mind that setting a threshold is hard. This is because if the image is highly zoomed, the disturbances might have large area and they might not be removed even on providing the threshold.
-  6. Also make sure that the dilation is not large, as it might join the hair components of the ravana face which does not have any moustache or eyebrows.
+  6. Also make sure that the dilation is not large, as it might join the hair components of the ravana face which does not have any moustache or eyebrows which will lead to one connected component biut in actual 
+     there should be two.
 
 
 If we get the answer for the two parts as yes, our Ravana is real.
