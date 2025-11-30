@@ -27,10 +27,9 @@ So how do we solve this problem statement using computer vision?
 
 PART-1 : Finding the number of heads to the right and to the left of the main face:
 
-  1. We start by finding the number of peaks or the tips of the mukuts of Ravana faces. For this we look at the pixel which is coloured and is at the largest height from the bottom of the imagefor every column of 
-     the 2-D image array.
+  1. We start by finding the number of peaks or the tips of the mukuts of Ravana faces. For this we look at the pixel which is coloured and is at the largest height from the bottom of the image for every column of the 2-D image array.
   2. We also save the heights of these peaks.
-  3. As can be seen from the pictures, that the height of the mukut tip of the faces increases from the left to the right and then decreases. So, we will start traversing the array containing the heights of these      peaks.
+  3. As can be seen from the pictures, that the height of the mukut tip of the faces increases from the left to the right and then decreases. So, we will start traversing the array containing the heights of these peaks.
   4. This traversing will help us to count the number of faces to the left and to the right of the main face.
   5. Now, if the number of faces to the left are four and to the right are five, our code returns 'yes', else 'no'.
 
@@ -38,12 +37,11 @@ PART-1 : Finding the number of heads to the right and to the left of the main fa
 PART-2 : Checking if one of the faces is absent:
 
   1. For this we identify all the pixels which have a near black colour and we dilate it, which joins all the beard and hair elements of all the faces.
-  2. Now we remove all the small areas by setting a threshold, this removes all the small disturbances from the image. Disturbances includes the eyebrow elements as they are small. We are removing these elements       because on dilation they might become big and make a different connected component.
-  3. After this we count the number of connected components from the image, if the answer turns out to be greater than 1, it means atleast one of the faces does not have eyebrows and moustache. This means that         the given Ravana image is fake.
+  2. Now we remove all the small areas by setting a threshold, this removes all the small disturbances from the image. Disturbances includes the eyebrow elements as they are small. We are removing these elements because on dilation they might become big and make a different connected component.
+  3. After this we count the number of connected components from the image, if the answer turns out to be greater than 1, it means atleast one of the faces does not have eyebrows and moustache. This means that the given Ravana image is fake.
   4. If the number of connected components come out to be 1, our ravana image is 'real'.
   5. Please keep in mind that setting a threshold is hard. This is because if the image is highly zoomed, the disturbances might have large area and they might not be removed even on providing the threshold.
-  6. Also make sure that the dilation is not large, as it might join the hair components of the ravana face which does not have any moustache or eyebrows which will lead to one connected component biut in actual 
-     there should be two.
+  6. Also make sure that the dilation is not large, as it might join the hair components of the ravana face which does not have any moustache or eyebrows which will lead to one connected component but in actual there should be two.
 
 
 If we get the answer for the two parts as yes, our Ravana is real.
